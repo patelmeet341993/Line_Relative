@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/design_default_color_primary"
+        ></RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/my_icon"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Friendly IT Solution"
+        android:textSize="20dp"
+        android:layout_below="@+id/img"
+        android:id="@+id/txt"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:padding="10dp"
+        android:background="@drawable/back"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:background="@drawable/back1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="5">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:src="@drawable/icon_user"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:hint="Enter userid"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/back2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line1"
+            android:weightSum="5">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:tint="@color/design_default_color_primary"
+                android:src="@drawable/icon_password"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/butnclick_primery"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/dev"
+        android:layout_marginBottom="40dp"
+        android:text="Register Here !"
+        android:textColor="@color/white"
+        android:background="@drawable/butnclick_primery"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed BY FIS"
+        android:gravity="center"
+        android:id="@+id/dev"
+        android:textSize="18dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"/>
+
+</RelativeLayout>
